@@ -1,0 +1,4 @@
+/openai
+.idea/
+__pycache__/
+.env

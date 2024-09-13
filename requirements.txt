@@ -1,0 +1,11 @@
+langchain==0.0.354
+chromadb==0.4.22
+openai==1.6.1
+chroma-hnswlib==0.7.3
+slack_sdk
+pysqlite3-binary==0.5.2.post2
+tiktoken==0.5.2
+slack-bolt==1.18.1
+pdfminer.six==20231228
+python-dotenv==1.0.0
+langchain-openai
