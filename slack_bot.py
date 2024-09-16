@@ -44,6 +44,6 @@ def handle_message_events(body, say, logger):
 
 # Ready? Start your app!
 if __name__ == "__main__":
-    a = SocketModeHandler(app, os.environ.get("SLACK_APP_SECRET"))
+    a = SocketModeHandler(app, os.environ.get("SLACK_APP_TOKEN"))
     a.start()
     # app.start(port=int(os.environ.get("PORT", 3000)))
