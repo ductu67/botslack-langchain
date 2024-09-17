@@ -28,7 +28,7 @@ from langchain_community.embeddings import OpenAIEmbeddings
 from langchain_community.vectorstores.chroma import Chroma
 
 load_dotenv()
-CHROMA_PERSISTENCE_DIR = os.environ.get("CHROMA_PERSISTENCE_DIR", "openai")
+CHROMA_PERSISTENCE_DIR = os.environ.get("CHROMA_PERSISTENCE_DIR", "../openai")
 CHROMA_COLLECTION = os.environ.get("CHROMA_COLLECTION", "openaiembeddings")
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 
@@ -100,7 +100,7 @@ def list_files_in_directory(folder_path):
     return files
 
 
-folder_path = './data'
+folder_path = 'data'
 print(list_files_in_directory(folder_path))
 for file in list_files_in_directory(folder_path):
     ChromaDB().add(f'data/{file}')

@@ -12,3 +12,4 @@ tiktoken==0.7.0
 pdfminer.six==20240706
 python-dotenv==1.0.1
 python-telegram-bot==21.5
+bs4==0.0.2
